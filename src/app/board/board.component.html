@@ -1,0 +1,33 @@
+<div
+  *ngIf="winner &&showPopup"
+  (click)="showPopup = !showPopup;newGame()"
+  class="popup-container">
+<div class="popup">
+  <h2>
+    <span [ngClass]="{'O': winner === 'O', 'X':winner==='X'} " class="who">{{ winner}}</span>
+  </h2>
+</div>
+</div>
+
+<div
+  *ngIf="winner &&showPopup"
+  class="bg"></div>
+<div class="player">
+  <div class="title">
+    <span class="X">X</span>
+    <span class="O">O</span>
+  </div>
+
+  <h1> {{ player }} Turn</h1>
+
+  <button class="newGame" (click)="newGame()"> <i class="fa-solid fa-rotate-right"></i></button>
+</div>
+
+<main>
+  <app-square
+      *ngFor="let val of squares; let i = index"
+      [value]="val"
+      (click)="makeMove(i)">
+
+  </app-square>
+</main>

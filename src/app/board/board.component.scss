@@ -1,0 +1,117 @@
+
+
+main {
+  display: grid;
+  grid-template-columns: 150px 150px 150px;
+  grid-row-gap: 20px;
+  grid-column-gap: 10px;
+  background: #1a2b33;
+  justify-content: center;
+  padding: 30px;
+}
+
+app-square {
+  height: 150px;
+  border-radius: 10px;
+}
+
+.newGame {
+  height: 50px;
+  width: 50px;
+  font-size: 1.5em;
+  font-weight: 700;
+  border: none;
+  border-radius: 10px;
+  background-color: #aabfca;
+}
+.newGame:hover{
+  cursor: pointer;
+}
+
+.player {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+h1 {
+  font-size: 1.4em;
+  width: fit-content;
+  background: #1e3640;
+  padding: 20px 40px 20px 40px;
+  border-radius: 20px;
+  box-shadow: 0 5px #0f161a;
+  color: #aabfca;
+}
+
+.title {
+  display: flex;
+  gap: 10px;
+  font-size: 2em;
+  font-weight: 700;
+}
+.O {
+  color:#f2b236 ;
+}
+.X {
+  color: #2dc3c0;
+}
+
+.winner {
+  font-size: 1.4em;
+  width: fit-content;
+  background: #1e3640;
+  padding: 20px 40px 20px 40px;
+  border-radius: 20px;
+  box-shadow: 0 5px #0f161a;
+  color: #aabfca;
+}
+
+.popup-container {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 40;
+  height: 100vh;
+  width: 100vw;
+}
+
+//.popup-background {
+//  background-color: black;
+//  opacity: 0.5;
+//  z-index: 30 ;
+//  height: 100vh;
+//  width: 100vw;
+//}
+
+
+.popup {
+  position: absolute;
+  background-color: #1e3640;
+  height: 300px;
+  width: 300px;
+  color: #aabfca;
+  border-radius: 20px;
+  display: grid;
+  place-items: center;
+}
+
+.popup > h2{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.who {
+  font-size: 3em;
+}
+
+.bg {
+  position: absolute;
+  filter: blur(30px);
+  height: 100vh;
+  width: 100vw;
+  z-index: 30;
+  opacity: 0.9;
+  background-color: #1a2b33;
+}
