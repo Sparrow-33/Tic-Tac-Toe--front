@@ -1,0 +1,12 @@
+{
+
+  "hosting": {
+
+    "site": "tictactoe-joyboy",
+
+    "public": "public"
+
+
+  }
+
+}

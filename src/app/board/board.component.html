@@ -18,7 +18,7 @@
     <span class="O">O</span>
   </div>
 
-  <h1> {{ player }} Turn</h1>
+  <h1> <span [ngClass]="{'O': player === 'O', 'X':player==='X'} " >{{ player }} </span> Turn</h1>
 
   <button class="newGame" (click)="newGame()"> <i class="fa-solid fa-rotate-right"></i></button>
 </div>
